@@ -11,7 +11,7 @@ const Footer = () => {
               <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center">
                 <Wrench className="w-6 h-6 text-white" />
               </div>
-              <span className="text-2xl font-black">HandyWork Technologies</span>
+              <span className="text-2xl font-black">HandyWork</span>
             </div>
             <p className="text-white/80 mb-6 leading-relaxed max-w-md">
               Connecting homeowners with skilled professionals for all their home improvement needs. 
@@ -20,15 +20,15 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-white/80">
                 <Mail className="w-5 h-5 text-primary" />
-                <span>contact@handywork.tech</span>
+                <span>info@handywork.com</span>
               </div>
               <div className="flex items-center gap-3 text-white/80">
                 <Phone className="w-5 h-5 text-primary" />
-                <span>+1 (555) 123-4567</span>
+                <span>+254 000 000 </span>
               </div>
               <div className="flex items-center gap-3 text-white/80">
                 <MapPin className="w-5 h-5 text-primary" />
-                <span>San Francisco, CA</span>
+                <span>Nairobi, kenya</span>
               </div>
             </div>
           </div>
@@ -59,7 +59,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-white/20 mt-12 pt-8 text-center text-white/60">
-          <p>&copy; 2024 HandyWork Technologies. All rights reserved.</p>
+          <p>&copy; 2025 HandyWork . All rights reserved.</p>
         </div>
       </div>
     </footer>
