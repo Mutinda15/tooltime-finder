@@ -13,8 +13,8 @@ const steps = [
   },
   {
     icon: Calendar,
-    title: "Book Instantly",
-    description: "Schedule appointments that fit your timeline with real-time availability"
+    title: "Book Instantly & Request",
+    description: "Schedule appointments or send service requests that fit your timeline with real-time availability"
   },
   {
     icon: CheckCircle,
