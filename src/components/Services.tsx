@@ -80,10 +80,6 @@ const Services = () => {
                 <p className="text-muted-foreground mb-4 leading-relaxed">
                   {service.description}
                 </p>
-                <div className="flex items-center justify-center text-primary font-semibold group-hover:gap-3 gap-2 transition-all cursor-pointer">
-                  Learn More 
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </div>
               </CardContent>
             </Card>
           ))}
