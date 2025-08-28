@@ -1,4 +1,5 @@
 import { Wrench, Mail, Phone, MapPin } from "lucide-react";
+import { FaTiktok, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -17,6 +18,19 @@ const Footer = () => {
               Connecting homeowners with skilled professionals for all their home improvement needs. 
               Quality work, trusted reviews, instant booking.
             </p>
+            
+            {/* Social Media Links */}
+            <div className="flex gap-4 mb-6">
+              <a href="#" className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+                <FaTiktok className="w-5 h-5 text-white" />
+              </a>
+              <a href="#" className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+                <FaInstagram className="w-5 h-5 text-white" />
+              </a>
+              <a href="#" className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+                <FaLinkedin className="w-5 h-5 text-white" />
+              </a>
+            </div>
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-white/80">
                 <Mail className="w-5 h-5 text-primary" />
