@@ -46,22 +46,13 @@ const Hero = () => {
           </div>
           
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex justify-center">
             <Button 
               size="lg" 
               className="bg-primary hover:bg-primary-hover text-white font-bold py-6 px-8 rounded-xl text-lg shadow-xl transform hover:scale-105 transition-all duration-200"
             >
               <Download className="w-6 h-6 mr-3" />
               Download App
-            </Button>
-            
-            <Button 
-              variant="outline" 
-              size="lg"
-              className="border-2 border-white text-white hover:bg-white hover:text-primary font-bold py-6 px-8 rounded-xl text-lg backdrop-blur-sm bg-white/10"
-            >
-              <Play className="w-6 h-6 mr-3" />
-              Watch Demo
             </Button>
           </div>
           
