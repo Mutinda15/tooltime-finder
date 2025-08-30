@@ -57,7 +57,7 @@ const Hero = () => {
           </div>
           
           <p className="mt-6 text-white/70">
-            Available on Google Play Store
+            Coming Soon on Play Store
           </p>
         </div>
       </div>
