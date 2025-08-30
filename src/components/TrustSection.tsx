@@ -40,16 +40,16 @@ const TrustSection = () => {
           {trustFeatures.map((feature, index) => (
             <div 
               key={feature.title}
-              className="text-center p-6 rounded-2xl bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+              className="text-center p-6 rounded-2xl bg-slate-800 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-slate-700"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="mx-auto mb-4 p-4 bg-primary/10 rounded-2xl w-fit">
-                <feature.icon className="w-8 h-8 text-primary" />
+              <div className="mx-auto mb-4 p-4 bg-blue-500/20 rounded-2xl w-fit">
+                <feature.icon className="w-8 h-8 text-blue-400" />
               </div>
-              <h3 className="text-lg font-bold text-foreground mb-3">
+              <h3 className="text-lg font-bold text-white mb-3">
                 {feature.title}
               </h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-slate-300 leading-relaxed">
                 {feature.description}
               </p>
             </div>
