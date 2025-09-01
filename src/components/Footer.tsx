@@ -9,9 +9,9 @@ const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center">
-                <Wrench className="w-6 h-6 text-white" />
-              </div>
+            <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center">
+              <span className="text-2xl font-black text-white">H</span>
+            </div>
               <span className="text-2xl font-black">HandyWork</span>
             </div>
             <p className="text-white/80 mb-6 leading-relaxed max-w-md">
