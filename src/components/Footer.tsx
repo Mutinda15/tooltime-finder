@@ -9,10 +9,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-6">
-            <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center">
-              <span className="text-2xl font-black text-white">H</span>
-            </div>
-              <span className="text-2xl font-black">HandyWork</span>
+              <span className="text-2xl font-black">HandyWorks AI</span>
             </div>
             <p className="text-white/80 mb-6 leading-relaxed max-w-md">
               Connecting homeowners with skilled professionals for all their home improvement needs. 
@@ -73,7 +70,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-white/20 mt-12 pt-8 text-center text-white/60">
-          <p>&copy; 2025 HandyWork . All rights reserved.</p>
+          <p>&copy; 2025 HandyWorks AI . All rights reserved.</p>
         </div>
       </div>
     </footer>
