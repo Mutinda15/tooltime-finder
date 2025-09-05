@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="bg-foreground text-white py-16">
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Brand */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-6">
@@ -42,18 +42,6 @@ const Footer = () => {
                 <span>Nairobi, kenya</span>
               </div>
             </div>
-          </div>
-          
-          {/* Services */}
-          <div>
-            <h3 className="text-xl font-bold mb-6">Services</h3>
-            <ul className="space-y-3 text-white/80">
-              <li className="hover:text-primary transition-colors cursor-pointer">General Repairs</li>
-              <li className="hover:text-primary transition-colors cursor-pointer">Painting</li>
-              <li className="hover:text-primary transition-colors cursor-pointer">Electrical</li>
-              <li className="hover:text-primary transition-colors cursor-pointer">Plumbing</li>
-              <li className="hover:text-primary transition-colors cursor-pointer">Carpentry</li>
-            </ul>
           </div>
           
           {/* Company */}
