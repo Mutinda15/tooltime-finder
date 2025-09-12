@@ -17,7 +17,7 @@ const AppDownload = () => {
           <div className="mb-8">
             <Smartphone className="w-20 h-20 mx-auto mb-6 text-white/90" />
             <h2 className="text-4xl md:text-5xl font-black mb-6">
-              Download the HandyWorks AI App
+              Download the HandyWorks App
             </h2>
             <p className="text-xl text-white/90 mb-8 leading-relaxed">
               Get instant access to thousands of verified handymen in your area. 
