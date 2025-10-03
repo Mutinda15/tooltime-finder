@@ -33,7 +33,7 @@ const Hero = () => {
           <div className="flex flex-wrap justify-center gap-8 mb-10">
             <div className="flex items-center gap-2">
               <Users className="w-6 h-6 text-primary" />
-              <span className="font-semibold">10,000+ Handymen</span>
+              <span className="font-semibold">10,000+ Users & Handymen</span>
             </div>
             <div className="flex items-center gap-2">
               <Star className="w-6 h-6 text-yellow-400 fill-current" />
