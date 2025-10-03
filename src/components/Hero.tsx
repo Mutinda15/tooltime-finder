@@ -52,7 +52,7 @@ const Hero = () => {
               className="bg-primary hover:bg-primary-hover text-white font-bold py-6 px-8 rounded-xl text-lg shadow-xl transform hover:scale-105 transition-all duration-200"
             >
               <Download className="w-6 h-6 mr-3" />
-              Download App
+              Beta Version
             </Button>
           </div>
           
