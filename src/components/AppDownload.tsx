@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { Smartphone, Download, Star } from "lucide-react";
+import { Card } from "@/components/ui/card";
+import { Smartphone, Download, Star, Users, Award, Wrench } from "lucide-react";
 
 const AppDownload = () => {
   return (
@@ -13,51 +14,84 @@ const AppDownload = () => {
       </div>
       
       <div className="container mx-auto px-6 relative z-10">
-        <div className="max-w-4xl mx-auto text-center">
-          <div className="mb-8">
-            <Smartphone className="w-20 h-20 mx-auto mb-6 text-white/90" />
-            <h2 className="text-4xl md:text-5xl font-black mb-6">
-              Download the HandyWorks App
-            </h2>
-            <p className="text-xl text-white/90 mb-8 leading-relaxed">
-              Get instant access to thousands of verified handymen in your area. 
-              Available now on Google Play Store.
-            </p>
-          </div>
-          
-          {/* App Stats */}
-          <div className="flex flex-wrap justify-center gap-8 mb-10">
-            <div className="text-center">
-              <div className="text-3xl font-black text-white mb-2">50K+</div>
-              <div className="text-white/80">Downloads</div>
-            </div>
-            <div className="text-center">
-              <div className="flex items-center justify-center gap-1 mb-2">
-                <span className="text-3xl font-black text-white">4.9</span>
-                <Star className="w-6 h-6 text-yellow-400 fill-current" />
-              </div>
-              <div className="text-white/80">App Rating</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-black text-white mb-2">10K+</div>
-              <div className="text-white/80">Professionals</div>
-            </div>
-          </div>
-          
-          {/* Download Button */}
-          <div className="flex justify-center">
-            <Button 
-              size="lg" 
-              className="bg-white hover:bg-white/90 text-primary font-black py-6 px-12 rounded-2xl text-lg shadow-2xl transform hover:scale-105 transition-all duration-200 border-2 border-white"
-            >
-              <Download className="w-6 h-6 mr-3" />
-              Get it on Google Play
-            </Button>
-          </div>
-          
-          <p className="mt-6 text-white/70 text-sm">
-            Free download • Available on Android
+        <div className="text-center max-w-4xl mx-auto mb-16">
+          <h2 className="text-4xl md:text-5xl font-black mb-6 text-white">
+            Download Our Apps
+          </h2>
+          <p className="text-xl text-white/90 mb-8 leading-relaxed">
+            Whether you're looking for services or providing them, we have an app for you.
           </p>
+        </div>
+
+        {/* Two Apps Grid */}
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          {/* HandyWorks App for Users */}
+          <Card className="bg-white/10 backdrop-blur-sm border-white/20 p-8 text-white hover:bg-white/15 transition-all duration-300">
+            <div className="text-center">
+              <div className="w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <Users className="w-12 h-12 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold mb-4">HandyWorks</h3>
+              <p className="text-white/80 mb-6 leading-relaxed">
+                For homeowners and clients. Find and book trusted handymen for all your home improvement needs.
+              </p>
+              
+              {/* Stats */}
+              <div className="flex justify-center gap-6 mb-8 text-sm">
+                <div className="flex items-center gap-2">
+                  <Download className="w-4 h-4" />
+                  <span>50K+ Downloads</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Star className="w-4 h-4 fill-current text-yellow-400" />
+                  <span>4.9 Rating</span>
+                </div>
+              </div>
+
+              <Button 
+                size="lg" 
+                className="w-full bg-white text-primary hover:bg-white/90 font-bold"
+              >
+                <Download className="w-5 h-5 mr-2" />
+                Get on Google Play
+              </Button>
+              <p className="mt-3 text-sm text-white/60">Coming Soon</p>
+            </div>
+          </Card>
+
+          {/* Handyman App for Service Providers */}
+          <Card className="bg-white/10 backdrop-blur-sm border-white/20 p-8 text-white hover:bg-white/15 transition-all duration-300">
+            <div className="text-center">
+              <div className="w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <Wrench className="w-12 h-12 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold mb-4">Handyman Pro</h3>
+              <p className="text-white/80 mb-6 leading-relaxed">
+                For service providers. Grow your business, manage bookings, and connect with clients in your area.
+              </p>
+              
+              {/* Stats */}
+              <div className="flex justify-center gap-6 mb-8 text-sm">
+                <div className="flex items-center gap-2">
+                  <Award className="w-4 h-4" />
+                  <span>10K+ Pros</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Star className="w-4 h-4 fill-current text-yellow-400" />
+                  <span>4.8 Rating</span>
+                </div>
+              </div>
+
+              <Button 
+                size="lg" 
+                className="w-full bg-white text-primary hover:bg-white/90 font-bold"
+              >
+                <Download className="w-5 h-5 mr-2" />
+                Get on Google Play
+              </Button>
+              <p className="mt-3 text-sm text-white/60">Coming Soon</p>
+            </div>
+          </Card>
         </div>
       </div>
     </section>
