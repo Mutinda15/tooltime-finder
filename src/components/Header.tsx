@@ -26,6 +26,13 @@ const Header = () => {
             <a href="#contact" className="text-gray-700 hover:text-primary transition-colors">Contact</a>
           </nav>
           
+          {/* CTA Button */}
+          <div className="hidden md:block">
+            <Button className="bg-primary hover:bg-primary-hover text-white">
+              Beta Version
+            </Button>
+          </div>
+          
           {/* Mobile Menu Button */}
           <button
             className="md:hidden p-2"
@@ -44,6 +51,9 @@ const Header = () => {
               <a href="#how-it-works" className="text-gray-700 hover:text-primary transition-colors">How It Works</a>
               <a href="#about" className="text-gray-700 hover:text-primary transition-colors">About</a>
               <a href="#contact" className="text-gray-700 hover:text-primary transition-colors">Contact</a>
+              <Button className="bg-primary hover:bg-primary-hover text-white w-full mt-4">
+                Beta Version
+              </Button>
             </nav>
           </div>
         )}
