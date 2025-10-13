@@ -8,8 +8,8 @@ const steps = [
   },
   {
     icon: UserCheck,
-    title: "View Profiles",
-    description: "Check reviews, photos of previous work, and verify credentials"
+    title: "View Profiles & Ratings",
+    description: "Check reviews, and ratings of previous work, and verify credentials"
   },
   {
     icon: Calendar,
