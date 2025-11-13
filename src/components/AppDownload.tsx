@@ -31,7 +31,7 @@ const AppDownload = () => {
               <div className="w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <Users className="w-12 h-12 text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4">HandyWorks</h3>
+              <h3 className="text-2xl font-bold mb-4">Snipe Technologies</h3>
               <p className="text-white/80 mb-6 leading-relaxed">
                 For homeowners and clients. Find and book trusted handymen for all your home improvement needs.
               </p>
