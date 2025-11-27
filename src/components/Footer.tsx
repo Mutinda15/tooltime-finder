@@ -1,7 +1,6 @@
 import { Wrench, Mail, Phone, MapPin } from "lucide-react";
 import { FaTiktok, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
+import NewsletterForm from "./NewsletterForm";
 
 const Footer = () => {
   return (
@@ -68,14 +67,7 @@ const Footer = () => {
             <p className="text-white/80 mb-4">
               Subscribe to get updates on our latest services and offers.
             </p>
-            <div className="flex flex-col gap-3">
-              <Input 
-                type="email" 
-                placeholder="Enter your email" 
-                className="bg-white/10 border-white/20 text-white placeholder:text-white/50"
-              />
-              <Button className="w-full">Subscribe</Button>
-            </div>
+            <NewsletterForm />
           </div>
         </div>
         
