@@ -1,11 +1,13 @@
 import { Wrench, Mail, Phone, MapPin } from "lucide-react";
 import { FaTiktok, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
 
 const Footer = () => {
   return (
     <footer className="bg-foreground text-white py-16">
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-6">
@@ -58,6 +60,22 @@ const Footer = () => {
               <li className="hover:text-primary transition-colors cursor-pointer">Terms of Service</li>
               <li className="hover:text-primary transition-colors cursor-pointer">Support</li>
             </ul>
+          </div>
+
+          {/* Newsletter */}
+          <div>
+            <h3 className="text-xl font-bold mb-6">Newsletter</h3>
+            <p className="text-white/80 mb-4">
+              Subscribe to get updates on our latest services and offers.
+            </p>
+            <div className="flex flex-col gap-3">
+              <Input 
+                type="email" 
+                placeholder="Enter your email" 
+                className="bg-white/10 border-white/20 text-white placeholder:text-white/50"
+              />
+              <Button className="w-full">Subscribe</Button>
+            </div>
           </div>
         </div>
         
