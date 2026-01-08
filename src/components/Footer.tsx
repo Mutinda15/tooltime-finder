@@ -72,7 +72,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-white/20 mt-12 pt-8 text-center text-white/60">
-          <p>&copy; 2025 Snipe Technologies. All rights reserved.</p>
+          <p>&copy; 2026 Snipe Technologies. All rights reserved.</p>
         </div>
       </div>
     </footer>
