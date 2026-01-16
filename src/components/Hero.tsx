@@ -19,7 +19,7 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-6 text-center text-white">
         <div className="max-w-4xl mx-auto animate-slide-up">
           <h1 className="text-5xl md:text-7xl font-black mb-6 leading-tight">
-            Find <span className="text-accent-blue bg-white/10 px-4 py-2 rounded-2xl">Skilled</span>
+            Find <span className="text-primary bg-white/10 px-4 py-2 rounded-2xl">Skilled</span>
             <br />
             Handymen Near You
           </h1>
