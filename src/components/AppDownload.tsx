@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Smartphone, Download, Star, Users, Award, Wrench } from "lucide-react";
+import { Smartphone, Download, Star, Award } from "lucide-react";
 
 const AppDownload = () => {
   return (
@@ -28,8 +28,8 @@ const AppDownload = () => {
           {/* HandyWorks App for Users */}
           <Card className="bg-white/10 backdrop-blur-sm border-white/20 p-8 text-white hover:bg-white/15 transition-all duration-300">
             <div className="text-center">
-              <div className="w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <Users className="w-12 h-12 text-white" />
+              <div className="w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-6 p-2">
+                <img src="/lovable-uploads/c96c8813-f0d6-47df-b857-f83adbf861cf.png" alt="Snipe Work" className="w-full h-full object-contain" />
               </div>
               <h3 className="text-2xl font-bold mb-4">Snipe Work</h3>
               <p className="text-white/80 mb-6 leading-relaxed">
@@ -62,8 +62,8 @@ const AppDownload = () => {
           {/* Handyman App for Service Providers */}
           <Card className="bg-white/10 backdrop-blur-sm border-white/20 p-8 text-white hover:bg-white/15 transition-all duration-300">
             <div className="text-center">
-              <div className="w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <Wrench className="w-12 h-12 text-white" />
+              <div className="w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-6 p-2">
+                <img src="/lovable-uploads/c96c8813-f0d6-47df-b857-f83adbf861cf.png" alt="Snipe Provider" className="w-full h-full object-contain" />
               </div>
               <h3 className="text-2xl font-bold mb-4">Snipe Provider</h3>
               <p className="text-white/80 mb-6 leading-relaxed">
