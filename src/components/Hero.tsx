@@ -21,7 +21,7 @@ const Hero = () => {
           <h1 className="text-5xl md:text-7xl font-black mb-6 leading-tight">
             Find <span className="text-black bg-white/10 px-4 py-2 rounded-2xl">Skilled</span>
             <br />
-            Handymen Near You
+            Service Providers Near You
           </h1>
           
           <p className="text-xl md:text-2xl mb-8 text-white/90 font-light leading-relaxed">
