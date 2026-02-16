@@ -4,6 +4,7 @@ import TrustSection from "@/components/TrustSection";
 import HowItWorks from "@/components/HowItWorks";
 import AppDownload from "@/components/AppDownload";
 import Footer from "@/components/Footer";
+import ChatWidget from "@/components/ChatWidget";
 
 const Index = () => {
   return (
@@ -14,6 +15,7 @@ const Index = () => {
       <HowItWorks />
       <AppDownload />
       <Footer />
+      <ChatWidget />
     </div>
   );
 };
