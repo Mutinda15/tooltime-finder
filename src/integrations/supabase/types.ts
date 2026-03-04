@@ -14,6 +14,87 @@ export type Database = {
   }
   public: {
     Tables: {
+      houses: {
+        Row: {
+          address: string | null
+          bathrooms: number
+          bedrooms: number
+          contact_email: string | null
+          contact_phone: string | null
+          contact_whatsapp: string | null
+          created_at: string
+          description: string
+          electricity_included: boolean
+          furnished: boolean
+          id: string
+          images: string[] | null
+          is_available: boolean
+          landlord_id: string
+          location: string
+          parking: boolean
+          price: number
+          price_period: string
+          property_type: string
+          security: boolean
+          title: string
+          updated_at: string
+          water_included: boolean
+          wifi: boolean
+        }
+        Insert: {
+          address?: string | null
+          bathrooms?: number
+          bedrooms?: number
+          contact_email?: string | null
+          contact_phone?: string | null
+          contact_whatsapp?: string | null
+          created_at?: string
+          description: string
+          electricity_included?: boolean
+          furnished?: boolean
+          id?: string
+          images?: string[] | null
+          is_available?: boolean
+          landlord_id: string
+          location: string
+          parking?: boolean
+          price: number
+          price_period?: string
+          property_type?: string
+          security?: boolean
+          title: string
+          updated_at?: string
+          water_included?: boolean
+          wifi?: boolean
+        }
+        Update: {
+          address?: string | null
+          bathrooms?: number
+          bedrooms?: number
+          contact_email?: string | null
+          contact_phone?: string | null
+          contact_whatsapp?: string | null
+          created_at?: string
+          description?: string
+          electricity_included?: boolean
+          furnished?: boolean
+          id?: string
+          images?: string[] | null
+          is_available?: boolean
+          landlord_id?: string
+          location?: string
+          parking?: boolean
+          price?: number
+          price_period?: string
+          property_type?: string
+          security?: boolean
+          title?: string
+          updated_at?: string
+          water_included?: boolean
+          wifi?: boolean
+        }
+        Relationships: []
+      }
       newsletter_subscribers: {
         Row: {
           email: string

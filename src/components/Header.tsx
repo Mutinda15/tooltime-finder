@@ -1,6 +1,7 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,23 +12,29 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
-            <img 
-              src="/lovable-uploads/c96c8813-f0d6-47df-b857-f83adbf861cf.png" 
-              alt="Handy Logo" 
-              className="h-8 w-auto"
-            />
+            <Link to="/">
+              <img 
+                src="/lovable-uploads/c96c8813-f0d6-47df-b857-f83adbf861cf.png" 
+                alt="Snipe Technologies Logo" 
+                className="h-8 w-auto"
+              />
+            </Link>
           </div>
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#services" className="text-gray-700 hover:text-primary transition-colors">Services</a>
-            <a href="#how-it-works" className="text-gray-700 hover:text-primary transition-colors">How It Works</a>
-            <a href="#about" className="text-gray-700 hover:text-primary transition-colors">About</a>
-            <a href="#contact" className="text-gray-700 hover:text-primary transition-colors">Contact</a>
+            <a href="/#services" className="text-gray-700 hover:text-primary transition-colors">Services</a>
+            <Link to="/houses" className="text-gray-700 hover:text-primary transition-colors">Houses</Link>
+            <a href="/#how-it-works" className="text-gray-700 hover:text-primary transition-colors">How It Works</a>
+            <a href="/#about" className="text-gray-700 hover:text-primary transition-colors">About</a>
+            <a href="/#contact" className="text-gray-700 hover:text-primary transition-colors">Contact</a>
           </nav>
           
-          {/* CTA Button */}
-          <div className="hidden md:block">
+          {/* CTA Buttons */}
+          <div className="hidden md:flex items-center gap-3">
+            <Link to="/auth">
+              <Button variant="outline">Landlord Login</Button>
+            </Link>
             <Button className="bg-primary hover:bg-primary-hover text-white">
               Beta Version
             </Button>
@@ -47,11 +54,15 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden mt-4 pb-4 border-t border-gray-200">
             <nav className="flex flex-col space-y-4 mt-4">
-              <a href="#services" className="text-gray-700 hover:text-primary transition-colors">Services</a>
-              <a href="#how-it-works" className="text-gray-700 hover:text-primary transition-colors">How It Works</a>
-              <a href="#about" className="text-gray-700 hover:text-primary transition-colors">About</a>
-              <a href="#contact" className="text-gray-700 hover:text-primary transition-colors">Contact</a>
-              <Button className="bg-primary hover:bg-primary-hover text-white w-full mt-4">
+              <a href="/#services" className="text-gray-700 hover:text-primary transition-colors">Services</a>
+              <Link to="/houses" className="text-gray-700 hover:text-primary transition-colors" onClick={() => setIsMenuOpen(false)}>Houses</Link>
+              <a href="/#how-it-works" className="text-gray-700 hover:text-primary transition-colors">How It Works</a>
+              <a href="/#about" className="text-gray-700 hover:text-primary transition-colors">About</a>
+              <a href="/#contact" className="text-gray-700 hover:text-primary transition-colors">Contact</a>
+              <Link to="/auth" onClick={() => setIsMenuOpen(false)}>
+                <Button variant="outline" className="w-full">Landlord Login</Button>
+              </Link>
+              <Button className="bg-primary hover:bg-primary-hover text-white w-full">
                 Beta Version
               </Button>
             </nav>
