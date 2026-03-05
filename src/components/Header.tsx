@@ -24,7 +24,7 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <a href="/#services" className="text-gray-700 hover:text-primary transition-colors">Services</a>
-            <Link to="/houses" className="text-gray-700 hover:text-primary transition-colors">Houses</Link>
+            
             <a href="/#how-it-works" className="text-gray-700 hover:text-primary transition-colors">How It Works</a>
             <a href="/#about" className="text-gray-700 hover:text-primary transition-colors">About</a>
             <a href="/#contact" className="text-gray-700 hover:text-primary transition-colors">Contact</a>
@@ -55,7 +55,7 @@ const Header = () => {
           <div className="md:hidden mt-4 pb-4 border-t border-gray-200">
             <nav className="flex flex-col space-y-4 mt-4">
               <a href="/#services" className="text-gray-700 hover:text-primary transition-colors">Services</a>
-              <Link to="/houses" className="text-gray-700 hover:text-primary transition-colors" onClick={() => setIsMenuOpen(false)}>Houses</Link>
+              
               <a href="/#how-it-works" className="text-gray-700 hover:text-primary transition-colors">How It Works</a>
               <a href="/#about" className="text-gray-700 hover:text-primary transition-colors">About</a>
               <a href="/#contact" className="text-gray-700 hover:text-primary transition-colors">Contact</a>
