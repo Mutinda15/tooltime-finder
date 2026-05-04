@@ -26,7 +26,7 @@ const Header = () => {
             <a href="/#services" className="text-gray-700 hover:text-primary transition-colors">Services</a>
             
             <a href="/#how-it-works" className="text-gray-700 hover:text-primary transition-colors">How It Works</a>
-            <a href="/#about" className="text-gray-700 hover:text-primary transition-colors">About</a>
+            <Link to="/about" className="text-gray-700 hover:text-primary transition-colors">About</Link>
             <a href="/#contact" className="text-gray-700 hover:text-primary transition-colors">Contact</a>
           </nav>
           
@@ -57,7 +57,7 @@ const Header = () => {
               <a href="/#services" className="text-gray-700 hover:text-primary transition-colors">Services</a>
               
               <a href="/#how-it-works" className="text-gray-700 hover:text-primary transition-colors">How It Works</a>
-              <a href="/#about" className="text-gray-700 hover:text-primary transition-colors">About</a>
+              <Link to="/about" className="text-gray-700 hover:text-primary transition-colors" onClick={() => setIsMenuOpen(false)}>About</Link>
               <a href="/#contact" className="text-gray-700 hover:text-primary transition-colors">Contact</a>
               <Link to="/auth" onClick={() => setIsMenuOpen(false)}>
                 <Button variant="outline" className="w-full">Landlord Login</Button>
